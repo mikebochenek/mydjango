@@ -25,7 +25,7 @@ SECRET_KEY = '@6b(9q!&2+_d3g%k1^#uhhhq!#-7xf96v#+*g13yp8+*zasg6m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'dataviz.bochenek.ch' ]
+ALLOWED_HOSTS = [ 'dataviz.bochenek.ch', 'localhost', '127.0.0.1' ]
 
 
 # Application definition

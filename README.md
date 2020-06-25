@@ -1,5 +1,14 @@
 # mydjango - My Data Visualization project!
-The idea is to make Visualization dummy-proof -beyond-Excel (TM)
+- The idea is to make Visualization dummy-proof -beyond-Excel (TM)
+- It would be cool to guess how to draw the data (based on some clever algorithms, tweaked with ML!)
+
+## libraries to use
+Library | Notes or comments
+--- | --- 
+[Altair](https://github.com/altair-viz/altair) | interactive graphs
+[D Tale](https://pypi.org/project/dtale/) | interactive graphs
+[Various libaries](https://beepb00p.xyz/hpi.html) | "Human Programming Interface"
+[Streamlit.io](https://www.streamlit.io/) | the fastest way to build data apps
 
 # dependencies
 	sudo apt-get install python-pip apache2 libapache2-mod-wsgi

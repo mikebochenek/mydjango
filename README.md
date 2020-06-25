@@ -9,6 +9,8 @@ Library | Notes or comments
 [D Tale](https://pypi.org/project/dtale/) | interactive graphs
 [Various libaries](https://beepb00p.xyz/hpi.html) | "Human Programming Interface"
 [Streamlit.io](https://www.streamlit.io/) | the fastest way to build data apps
+[D3](http://d3.org/) | obviously...
+[geopandas](https://towardsdatascience.com/a-complete-guide-to-an-interactive-geographical-map-using-python-f4c5197e23e0) | geopandas on medium
 
 # dependencies
 	sudo apt-get install python-pip apache2 libapache2-mod-wsgi

@@ -24,10 +24,14 @@ Library | Notes or comments
 	pip install django psycopg2
 	pip install streamlit
 
+	virtualenv myenv
+	source ~/myenv/bin/activate
+	pip install -r requirements.txt
 
 # manage commands
-	manage.py collectstatic 
-	manage.py runserver
-	manage.py migrate
-	manage.py makemigrations
-	manage.py createsuperuser  
+	./manage.py collectstatic 
+	./manage.py makemigrations
+	./manage.py migrate
+	./manage.py createsuperuser  
+	./manage.py runserver 4000
+

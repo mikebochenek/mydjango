@@ -77,15 +77,12 @@ WSGI_APPLICATION = 'mydjango.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'test3',
-        'USER': 'test3',
-        'PASSWORD': 'test3',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3',
+        'USER': 'test',
+        'PASSWORD': 'test',
         'HOST': 'localhost',
         'PORT': '',        
-#        'OPTIONS': {
-#            'read_default_file': '/etc/postgresql/django.cnf',
-#        },
     }
 }
 

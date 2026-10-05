@@ -1,4 +1,4 @@
-altair==4.1.0
-Django==4.2.30
-psycopg2==2.8.5
-djangorestframework~=3.11
+altair==5.5
+django~=5.2
+# psycopg2==2.9
+djangorestframework~=3.18

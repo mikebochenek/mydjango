@@ -1,5 +1,6 @@
 # mydjango - My Data Visualization project!
-- The idea is to make Visualization dummy-proof -beyond-Excel (TM)
+- Revived for some new purposes...
+- The original idea was to make Visualization dummy-proof -beyond-Excel (TM)
 - It would be cool to guess how to draw the data (based on some clever algorithms, tweaked with ML!)
 
 ## libraries to use
@@ -35,3 +36,13 @@ Library | Notes or comments
 	./manage.py createsuperuser  
 	./manage.py runserver 4000
 
+# Dev (on windows)
+Prefix commands with 'python' - i.e.
+
+	python .\manage.py migrate
+	conda activate second
+
+# Links
+	http://localhost:4000/
+	http://localhost:4000/admin/
+	

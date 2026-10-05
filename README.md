@@ -43,6 +43,6 @@ Prefix commands with 'python' - i.e.
 	conda activate second
 
 # Links
-	http://localhost:4000/
-	http://localhost:4000/admin/
+- http://localhost:4000/
+- http://localhost:4000/admin/  login in with: user/user
 	

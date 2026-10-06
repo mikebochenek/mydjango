@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django import forms
+from .models import Dataset, User, Visualization
+from .serializers import UserSerializer, DatasetSerializer, VisualizationSerializer
+from rest_framework import viewsets
 
 class UploadFileForm(forms.Form):
     title = forms.CharField(max_length=50)
@@ -11,6 +14,15 @@ def index(request):
 
 def upload(request):
     return render(request, 'upload.html')
+
+
+class DatasetViewSet(viewsets.ModelViewSet):
+    queryset = Dataset.objects.all().order_by('-created')
+    serializer_class = DatasetSerializer
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all().order_by('-created')
+    serializer_class = UserSerializer
 
 def upload_file(request):
     if request.method == 'POST':

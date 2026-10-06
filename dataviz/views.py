@@ -4,6 +4,10 @@ from django import forms
 from .models import Dataset, User, Visualization
 from .serializers import UserSerializer, DatasetSerializer, VisualizationSerializer
 from rest_framework import viewsets
+import logging
+import json
+
+logger = logging.getLogger(__name__)
 
 class UploadFileForm(forms.Form):
     title = forms.CharField(max_length=50)
@@ -23,6 +27,10 @@ class DatasetViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by('-created')
     serializer_class = UserSerializer
+
+class VisualizationViewSet(viewsets.ModelViewSet):
+    queryset = Visualization.objects.all().order_by('-created')
+    serializer_class = VisualizationSerializer
 
 def upload_file(request):
     if request.method == 'POST':

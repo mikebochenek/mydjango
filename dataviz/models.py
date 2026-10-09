@@ -9,14 +9,14 @@ class User(models.Model):
 
 class Dataset(models.Model):
     data_type = models.IntegerField(default=0)
-    request_text = models.CharField(max_length=4000)
-    response_text = models.CharField(max_length=4000)
+    request_text = models.CharField(default='', max_length=4000)
+    response_text = models.CharField(default='', max_length=4000)
     blob_id = models.IntegerField(default=0)
-    blob_url = models.CharField(max_length=200)
-    nice_filename = models.CharField(max_length=200)
-    nice_path = models.CharField(max_length=200)
-    local_path = models.CharField(max_length=200)
-    raw_text = models.CharField(max_length=200)
+    blob_url = models.CharField(default='', max_length=200)
+    nice_filename = models.CharField(default='', max_length=200)
+    nice_path = models.CharField(default='', max_length=200)
+    local_path = models.CharField(default='', max_length=200)
+    raw_text = models.CharField(default='', max_length=200)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     create_date = models.DateTimeField()
 

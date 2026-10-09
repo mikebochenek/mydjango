@@ -16,8 +16,9 @@ class Dataset(models.Model):
     nice_filename = models.CharField(max_length=200)
     nice_path = models.CharField(max_length=200)
     local_path = models.CharField(max_length=200)
+    raw_text = models.CharField(max_length=200)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    created = models.DateTimeField(default=datetime.datetime.now)
+    create_date = models.DateTimeField()
 
 class Visualization(models.Model):
     dataset = models.ForeignKey(Dataset, on_delete=models.CASCADE)

@@ -21,7 +21,7 @@ def upload(request):
 
 
 class DatasetViewSet(viewsets.ModelViewSet):
-    queryset = Dataset.objects.all().order_by('-created')
+    queryset = Dataset.objects.all().order_by('-create_date')
     serializer_class = DatasetSerializer
 
 class UserViewSet(viewsets.ModelViewSet):

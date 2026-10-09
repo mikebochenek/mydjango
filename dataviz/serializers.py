@@ -10,8 +10,8 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class DatasetSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Dataset
-        fields = ['id', 'data_type', 'request_text', 'response_text', 'blob_id', 'blob_url', 'nice_filename', 'nice_path', 'local_path', 'user']
-
+        fields = ['id', 'data_type', 'request_text', 'response_text', 'blob_id', 'blob_url', 'nice_filename', 'nice_path', 'local_path', 'raw_text', 'user', 'create_date']
+    
 class VisualizationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Visualization
